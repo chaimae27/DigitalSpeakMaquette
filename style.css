@@ -21,6 +21,87 @@
 
 .container {
   background-color: #d32e34;
+  overflow: hidden;
+}
+
+.box div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  /* border: 6px solid #eef1d9; */
+  border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.box div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
 }
 
 .intro {
@@ -52,15 +133,70 @@
   font-size: 54px;
   line-height: 70px;
   /* or 130% */
-
   color: #ffffff;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.titleIntro span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.titleIntro span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.titleIntro span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.titleIntro span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.titleIntro span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.titleIntro span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.titleIntro span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.titleIntro span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.titleIntro span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.titleIntro span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 .title .sous-para {
   width: 722px;
   height: 64px;
   margin: 22px 0px 0px 40px;
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -74,12 +210,29 @@
 .secure {
   text-align: center;
   color: #fff;
+  /* color: rgba(255, 255, 255, 0.4); */
   width: 429px;
   height: 81px;
   margin: 60px 0px 0px 40px;
   background: #1a1a1a;
+  box-shadow: 0 0 5px #1a1a1a;
   border-radius: 16px;
   border: none;
+  cursor: pointer;
+  display: inline-block;
+  /* border: 3px solid #1a1a1a; */
+  border-radius: 50px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.secure:hover {
+  box-shadow: 0 0 10px 0 #90d5ec inset, 0 0 20px 2px #90d5ec;
+  border: 3px solid #90d5ec;
+}
+
+.secure:focus {
+  outline: none;
 }
 
 .secure .firstPara {
@@ -150,6 +303,7 @@
 
 .sec-title {
   text-align: center;
+  position: relative;
 }
 
 .sec-title h2 {
@@ -160,11 +314,29 @@
   font-weight: 700;
   font-size: 130px;
   line-height: 70px;
+  /* transform: translate(-50%, -50%); */
 }
 
 .sec-title .title-one {
   color: #d32e34;
   margin-top: 80px;
+  stroke: #ffa5d8;
+  stroke-width: 3;
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(189, 68%, 75%);
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%, 0%);
+  }
 }
 
 .sec-title .title-two {
@@ -550,7 +722,7 @@ footer .dangerPara {
 /* Large desktop  */
 @media only screen and (min-width: 1200px) {
   .container-fluid {
-    width: 105em;
+    max-width: 105em;
   }
   .masterClass::after {
     top: 133.3em;
