@@ -1,0 +1,559 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 71px;
+  background-color: #1a1a1a;
+}
+
+.navbar .container-fluid .navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px auto;
+  top: 21px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.container {
+  background-color: #d32e34;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  position: absolute;
+  width: 122px;
+  height: 38px;
+  left: 55px;
+  top: 137px;
+}
+
+.title h1 {
+  width: 711px;
+  height: 232px;
+  margin: 150px 0px 0px 40px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 70px;
+  /* or 130% */
+
+  color: #ffffff;
+}
+
+.title .sous-para {
+  width: 722px;
+  height: 64px;
+  margin: 22px 0px 0px 40px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 64px;
+  /* identical to box height, or 320% */
+  text-align: center;
+  color: #ffffff;
+}
+
+.secure {
+  text-align: center;
+  color: #fff;
+  width: 429px;
+  height: 81px;
+  margin: 60px 0px 0px 40px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  border: none;
+}
+
+.secure .firstPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.secure .secondPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  margin: -8px 0px 0px 0px;
+  font-size: 14px;
+}
+
+.personal-image {
+  margin-left: 10px;
+}
+
+.personal-image::before {
+  content: url("images/arrow.svg");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.persImage {
+  position: absolute;
+  margin: 70px;
+  width: 449px;
+  height: 578px;
+  background: url(images/personal-img.png);
+  background-repeat: no-repeat;
+}
+
+.arrow-icon {
+  /* position: absolute; */
+  width: 107.65px;
+  height: 143.53px;
+  left: 1327.48px;
+  top: 260px;
+  /* box-shadow: 0px 4px 4px rgba(48, 48, 48, 0.25); */
+  transform: rotate(29.41deg);
+}
+
+.scroll-down img {
+  width: 98px;
+  height: 98px;
+  display: flex;
+  margin: auto;
+}
+
+.company-list {
+  margin-top: 58px;
+  padding-bottom: 88px;
+}
+
+.company-list .logo-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.sec-title {
+  text-align: center;
+}
+
+.sec-title h2 {
+  max-width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 130px;
+  line-height: 70px;
+}
+
+.sec-title .title-one {
+  color: #d32e34;
+  margin-top: 80px;
+}
+
+.sec-title .title-two {
+  color: #1a1a1a;
+  margin-top: 20px;
+}
+
+.streamDetail {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  float: left;
+}
+
+.streamDetail > span > img {
+  position: absolute;
+  margin: -10em 0px 0px 0px;
+}
+
+.streamTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 70px;
+  text-align: center;
+  /* identical to box height, or 206% */
+  color: #1a1a1a;
+}
+
+.streamTitle span {
+  color: #d32e34;
+}
+
+.streamPara {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: justify;
+  padding: 33px;
+}
+
+.streamPara .streamInfo span {
+  color: #d32e34;
+}
+
+.rightStream {
+  margin-right: 2.7em;
+}
+
+.mehdiLive {
+  width: 762px;
+  height: 600px;
+  margin-top: -38rem;
+  z-index: 1;
+  margin-left: -38px;
+}
+
+.streamDate {
+  display: flex;
+  justify-content: flex-start;
+  width: 231px;
+  height: 55px;
+  border: none;
+  margin-left: 52%;
+}
+
+.streamDate span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.masterClass {
+  margin-top: 120px;
+  /* width: 100%; */
+  background: #eeeded;
+}
+
+.masterClass::before {
+  content: "";
+  position: absolute;
+  background-color: #d32e34;
+  width: 124px;
+  height: 61.5rem;
+}
+
+.masterClass::after {
+  content: "";
+  position: absolute;
+  background-color: #d32e34;
+  width: 124px;
+  height: 61.5rem;
+  left: 92%;
+  top: 133.3em;
+}
+
+.masterClass-title {
+  position: absolute;
+}
+
+.masterClass-title > h2 {
+  width: 1087px;
+  height: 120px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  /* line-height: 60px; */
+  text-align: center;
+  color: #1a1a1a;
+  margin: 0.9em 27%;
+}
+
+.masterClass-title h2 span {
+  color: #d33a2e;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  row-gap: 10px;
+}
+
+.card {
+  width: 311px;
+  height: 385px;
+  background: #d9d9d9;
+  margin-top: 13em;
+  border: none;
+}
+
+.card::before {
+  content: "";
+  background-color: #d32e34;
+  border-radius: 50%;
+  width: 124px;
+  height: 124px;
+}
+
+.cardOne::before {
+  content: url(images/travail-en-equipe.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -58px auto 25px auto;
+}
+
+.cardTwo::before {
+  content: url(images/bulles-de-discussion.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -58px auto 25px auto;
+}
+
+.cardThree::before {
+  content: url(images/trophy.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -58px auto 25px auto;
+}
+
+.card .card-title {
+  /* margin-top: 52px; */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  /* line-height: 60px; */
+  /* identical to box height, or 240% */
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.card .card-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 37px;
+  /* or 231% */
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.cardOneTitle,
+.cardTwoTitle,
+.cardThreeTitle {
+  width: 312px;
+  left: 147px;
+  top: 2682px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  /* or 120% */
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.busines {
+  width: 956px;
+  height: 116px;
+  margin: 44px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 34px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.spot {
+  margin: 0px 18em 28px;
+}
+
+.passion {
+  margin-top: 10px;
+}
+
+.passion h2 {
+  width: 674px;
+  height: 194px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  color: #1a1a1a;
+  margin: 1em 0 0 2.5em;
+}
+
+.description {
+  width: 620px;
+  height: 564px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: justify;
+  color: #1a1a1a;
+}
+
+/* .description p {
+  margin-top: 4em;
+} */
+
+.description span {
+  color: #d32e34;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.me {
+  position: absolute;
+  display: flex;
+  top: 204rem;
+  left: 56.7rem;
+}
+
+.hdi {
+  position: absolute;
+  display: flex;
+  top: 237rem;
+  left: 81.7rem;
+}
+
+.spots {
+  background-color: #d32e34;
+  margin: -108px 0px 60px 115px;
+}
+
+footer {
+  background-color: #1a1a1a;
+}
+
+footer > img {
+  width: 174px;
+  height: 54px;
+  margin: 38px auto;
+  align-items: center;
+  display: flex;
+}
+
+.navList {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  top: 4em;
+}
+
+.navList ul {
+  display: flex;
+  /* list-style: none; */
+  justify-content: space-evenly;
+}
+
+footer .simplePara {
+  width: 1105px;
+  height: 124px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 33px;
+  text-align: center;
+  color: #ffffff;
+  margin: 44px auto;
+}
+
+footer .dangerPara {
+  width: 1105px;
+  height: 63px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 33px;
+  text-align: center;
+  color: #d32e34;
+  margin: auto;
+}
+
+/* Responsive Code */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .container-fluid {
+    width: 120em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sec-title h2 {
+    font-size: 20px;
+  }
+
+  .intro {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container-fluid {
+    width: 105em;
+  }
+  .masterClass::after {
+    left: 157%;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .container-fluid {
+    width: 105em;
+  }
+  .masterClass::after {
+    left: 99rem;
+  }
+}
+
+/* Large desktop  */
+@media only screen and (min-width: 1200px) {
+  .container-fluid {
+    width: 105em;
+  }
+  .masterClass::after {
+    top: 133.3em;
+    left: 98rem;
+  }
+}
