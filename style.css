@@ -256,6 +256,49 @@
   margin-left: 10px;
 }
 
+.box1 {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.animate {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeLeft {
+  -webkit-animation-name: fadeLeft;
+  animation-name: fadeLeft;
+}
+
 .personal-image::before {
   content: url("images/arrow.svg");
   display: inline-block;
@@ -380,14 +423,31 @@
   line-height: 42px;
   text-align: justify;
   padding: 33px;
+  opacity: 0;
+  transition: 200ms ease-in-out transform, 200ms ease-in-out opacity;
 }
 
 .streamPara .streamInfo span {
   color: #d32e34;
 }
 
+.leftbox {
+  transform: translateX(-4%);
+}
+
 .rightStream {
   margin-right: 2.7em;
+  opacity: 0;
+  transition: 200ms ease-in-out transform, 200ms ease-in-out opacity;
+}
+
+.rightbox {
+  transform: translateX(9%);
+}
+
+.show_content {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .mehdiLive {
